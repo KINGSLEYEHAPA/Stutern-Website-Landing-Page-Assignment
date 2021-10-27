@@ -244,6 +244,33 @@ header {
   text-align: start;
 }
 
+.manifesto2 {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem 20rem;
+  margin-left: 4rem;
+}
+
+.manifesto2 h2 {
+  font-size: 3rem;
+  color: #1b1642;
+  font-family: "epilogue" "inter" sans-serif;
+  line-height: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  width: 100%;
+  text-align: center;
+}
+.manifesto2 p {
+  font-size: 1rem;
+  color: #1b1642;
+  font-family: "inter" sans-serif;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
 /* Alumni Section */
 
 .alumni {
@@ -293,4 +320,75 @@ header {
 .profile p span {
   font-size: 0.7rem;
   font-weight: 600;
+}
+
+/* Testimony Section */
+
+.testimony {
+  height: 90vh;
+  background-color: #1b1642;
+}
+
+.testimony-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.testimony-items p:first-child {
+  margin-top: 7rem;
+  width: 60%;
+  font-size: 2rem;
+  color: #d2d0db;
+  line-height: 2.2rem;
+  font-weight: 600;
+  font-family: "epilogue" sans-serif;
+  text-align: center;
+}
+.testimony-info img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.testimony-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+.testimony-info div {
+  padding-left: 1rem;
+}
+.testimony-info h4 {
+  color: #1bd3c6;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: "epilogue" sans-serif;
+  font-weight: 700;
+}
+.testimony-info p {
+  color: #d2d0db;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  font-family: "inter" sans-serif;
+  font-weight: 400;
+}
+
+/* Clients */
+
+.clients {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.clients-links div a img {
+  width: 80%;
 }
