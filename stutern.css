@@ -25,6 +25,7 @@ header {
   box-shadow: 1px 6px 5px 1px rgba(27, 22, 66, 0.2);
   border-radius: 0.05rem;
   margin-top: 0.2rem;
+  border: 1px solid gray;
 }
 .courses {
   width: 13rem;
@@ -161,6 +162,7 @@ header {
   line-height: 1.5rem;
   font-weight: 300;
   margin-top: 2.5rem;
+  width: 75%;
 }
 .hero-info button {
   background-color: #1bd3c6;
@@ -240,4 +242,55 @@ header {
   font-weight: 300;
   margin-top: 2.5rem;
   text-align: start;
+}
+
+/* Alumni Section */
+
+.alumni {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 7rem;
+}
+.alumni-a,
+.alumni-b {
+  display: flex;
+  margin: 2rem;
+}
+.profile img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  /* text-align: center; */
+}
+
+.profile {
+  width: 18rem;
+  text-align: center;
+}
+.profile h4 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: "epilogue" sans-serif;
+  color: #1b1642;
+}
+.profile h5 {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-family: "inter" sans-serif;
+  color: #1b1642;
+  font-weight: 300;
+}
+.profile p {
+  font-size: 1rem;
+  color: #1b1642;
+  font-family: "inter" sans-serif;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+.profile p span {
+  font-size: 0.7rem;
+  font-weight: 600;
 }
