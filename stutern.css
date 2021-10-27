@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif "Epilogue";
+  font-family: "Epilogue", sans-serif;
+  font-family: "Inter", sans-serif;
 }
-body {
-  background-color: #e6f8f9;
-}
+
+/* Navigation Section */
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.8rem;
   background-color: #e6f8f9;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .talents,
@@ -123,4 +125,119 @@ header {
 .fas {
   margin-left: 0.5rem;
   color: #1c1c1c;
+}
+
+/* Hero section */
+#hero {
+  display: flex;
+  height: 100vh;
+  background-color: #e6f8f9;
+}
+#hero > aside {
+  padding-top: 8rem;
+  margin: 0rem;
+}
+#hero aside:first-child {
+  width: 80%;
+  margin-left: 7rem;
+}
+#hero aside img {
+  width: 75%;
+  margin-left: 2rem;
+}
+.hero-info h1 {
+  font-size: 4rem;
+  color: #1b1642;
+  font-family: "epilogue" "inter" sans-serif;
+  line-height: 4.25rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.hero-info p {
+  font-size: 1rem;
+  color: #1b1642;
+  font-family: "inter" sans-serif;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+}
+.hero-info button {
+  background-color: #1bd3c6;
+  color: #1b091c;
+  box-shadow: 0 0 0 2.5 rgba(27, 211, 198, 0.25);
+  border-radius: 4px;
+  padding: 0.6rem 1.6rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+/* Company Vision Section */
+
+.vision {
+  display: flex;
+  padding-bottom: 10rem;
+}
+.vision > aside {
+  margin-top: 6rem;
+}
+
+.vision-img img {
+  width: 75%;
+}
+.vision-info {
+  width: 55%;
+  text-align: center;
+  margin-left: 7rem;
+  margin-top: 3.5rem;
+}
+.vision-info h2 {
+  font-size: 3rem;
+  color: #1b1642;
+  font-family: "epilogue" "inter" sans-serif;
+  line-height: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: start;
+}
+.vision-info h2 span {
+  color: #1bd3c6;
+}
+.vision-info p {
+  font-size: 1rem;
+  color: #1b1642;
+  font-family: "inter" sans-serif;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+  text-align: start;
+}
+.manifesto {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem 20rem;
+  margin-left: 4rem;
+}
+
+.manifesto h2 {
+  font-size: 3rem;
+  color: #1b1642;
+  font-family: "epilogue" "inter" sans-serif;
+  line-height: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  width: 75%;
+  text-align: center;
+}
+.manifesto p {
+  font-size: 1rem;
+  color: #1b1642;
+  font-family: "inter" sans-serif;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+  text-align: start;
 }
