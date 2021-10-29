@@ -18,25 +18,6 @@ header {
   top: 0;
 }
 
-.talents,
-.employers,
-.courses {
-  display: none;
-  box-shadow: 1px 6px 5px 1px rgba(27, 22, 66, 0.2);
-  border-radius: 0.05rem;
-  margin-top: 0.2rem;
-  border: none;
-}
-.courses {
-  width: 13rem;
-}
-.employers {
-  width: 17rem;
-}
-.talents {
-  width: 12rem;
-}
-
 .nav {
   display: flex;
   justify-content: space-evenly;
@@ -51,40 +32,66 @@ header {
   list-style: none;
   align-items: center;
 }
-.courses-menu,
-.employers-menu,
-.talents-menu {
-  position: relative;
-}
-.nav-links .courses-menu:hover .courses,
-.nav-links .employers-menu:hover .employers,
-.nav-links .talents-menu:hover .talents {
-  display: block;
-  position: absolute;
-  left: 0.02rem;
-  background-color: white;
-  border-radius: 0.5rem;
-}
-.nav-links .courses-menu:hover .courses ul,
-.nav-links .employers-menu:hover .employers ul,
-.nav-links .talents-menu:hover .talents ul {
-  list-style: none;
-}
-.nav-links .courses-menu:hover .courses ul li,
-.nav-links .employers-menu:hover .employers ul li,
-.nav-links .talents-menu:hover .talents ul li {
-  padding: 0 1rem;
-  margin: 0.8rem 0;
-}
 
-.nav-links .courses-menu:hover .courses ul li a,
-.nav-links .employers-menu:hover .employers ul li a,
-.nav-links .talents-menu:hover .talents ul li a {
-  font-size: 0.9rem;
-  line-height: 0.5rem;
-  font-family: "Inter";
-  font-weight: 500;
-  color: #1c1c1c;
+/* Special Hover Media Query */
+
+@media only screen and (min-width: 1101px) {
+  .talents,
+  .employers,
+  .courses {
+    display: none;
+    box-shadow: 1px 6px 5px 1px rgba(27, 22, 66, 0.2);
+    border-radius: 0.05rem;
+    margin-top: 0.2rem;
+    border: none;
+  }
+  .courses {
+    width: 13rem;
+  }
+  .employers {
+    width: 17rem;
+  }
+  .talents {
+    width: 12rem;
+  }
+
+  .courses-menu,
+  .employers-menu,
+  .talents-menu {
+    position: relative;
+  }
+
+  .nav-links .courses-menu:hover .courses,
+  .nav-links .employers-menu:hover .employers,
+  .nav-links .talents-menu:hover .talents {
+    display: block;
+    position: absolute;
+    left: 0.02rem;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links .courses-menu:hover .courses ul,
+  .nav-links .employers-menu:hover .employers ul,
+  .nav-links .talents-menu:hover .talents ul {
+    list-style: none;
+  }
+  .nav-links .courses-menu:hover .courses ul li,
+  .nav-links .employers-menu:hover .employers ul li,
+  .nav-links .talents-menu:hover .talents ul li {
+    padding: 0 1rem;
+    margin: 0.8rem 0;
+  }
+
+  .nav-links .courses-menu:hover .courses ul li a,
+  .nav-links .employers-menu:hover .employers ul li a,
+  .nav-links .talents-menu:hover .talents ul li a {
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #1c1c1c;
+  }
 }
 
 .nav-links li {
@@ -512,7 +519,7 @@ footer div ul li a {
 
 /* Media Queries- Tablet */
 
-@media only screen and (max-width: 1100px) and (min-width: 768px) {
+@media only screen and (max-width: 1101px) and (min-width: 768px) {
   /* Header Section */
   header {
     position: sticky;
@@ -520,7 +527,7 @@ footer div ul li a {
   }
   .nav {
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     left: 0%;
     display: none;
     background-color: white;
@@ -529,18 +536,14 @@ footer div ul li a {
   }
   .nav-links {
     display: block;
-    height: 75vh;
+    height: 70vh;
     width: 100%;
+    margin-top: 1.5rem;
   }
   .nav-links li {
     padding: 0 1.5rem;
-    margin-top: 0.1rem;
-  }
-
-  .nav-links .courses-menu:hover .courses ul li,
-  .nav-links .employers-menu:hover .employers ul li,
-  .nav-links .talents-menu:hover .talents ul li {
-    display: none;
+    /* margin-top: 0.1rem; */
+    width: 100%;
   }
 
   .courses-a,
@@ -551,20 +554,35 @@ footer div ul li a {
     border: none;
     background-color: none;
     box-shadow: none;
+    margin-top: -0.1rem;
   }
 
   .courses-a ul li a,
   .employers-a ul li a,
   .talents-a ul li a {
     font-size: 0.8rem;
+    text-decoration: none;
+    line-height: 1.8rem;
   }
   .courses-a ul li a:hover,
   .employers-a ul li a:hover,
   .talents-a ul li a:hover {
-    color: blue;
-    background-color: gray;
+    color: #3273dc;
+    text-align: left;
   }
 
+  .courses-a ul li,
+  .employers-a ul li,
+  .talents-a ul li {
+    /* margin: 0.5rem 0; */
+  }
+
+  .courses-a ul li :hover,
+  .employers-a ul li :hover,
+  .talents-a ul li :hover {
+    background-color: #fafafa;
+    padding: 0.5rem 73% 0.5rem 0rem;
+  }
   .courses ul,
   .employers ul,
   .talents ul {
@@ -572,16 +590,16 @@ footer div ul li a {
     display: block;
     left: 5%;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0.25rem;
   }
   .courses ul li,
   .employers ul li,
   .talents ul li .header-button {
-    padding-left: 0;
+    margin-left: 0.5rem;
   }
   .checkbtn {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
   }
   #check:checked ~ div {
@@ -589,7 +607,7 @@ footer div ul li a {
   }
 
   .fa-angle-down {
-    padding-left: 42rem;
+    padding-left: 30rem;
   }
 
   /* Hero Section */
@@ -709,7 +727,7 @@ footer div ul li a {
   }
   .nav {
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     left: 0%;
     display: none;
     background-color: white;
@@ -718,18 +736,14 @@ footer div ul li a {
   }
   .nav-links {
     display: block;
-    height: 75vh;
+    height: 70vh;
     width: 100%;
+    margin-top: 1.5rem;
   }
   .nav-links li {
     padding: 0 1.5rem;
-    margin-top: 0.1rem;
-  }
-
-  .nav-links .courses-menu:hover .courses ul li,
-  .nav-links .employers-menu:hover .employers ul li,
-  .nav-links .talents-menu:hover .talents ul li {
-    display: none;
+    /* margin-top: 0.1rem; */
+    width: 100%;
   }
 
   .courses-a,
@@ -740,20 +754,29 @@ footer div ul li a {
     border: none;
     background-color: none;
     box-shadow: none;
+    margin-top: -0.1rem;
   }
 
   .courses-a ul li a,
   .employers-a ul li a,
   .talents-a ul li a {
     font-size: 0.8rem;
+    text-decoration: none;
+    line-height: 1.8rem;
   }
   .courses-a ul li a:hover,
   .employers-a ul li a:hover,
   .talents-a ul li a:hover {
-    color: blue;
-    background-color: gray;
+    color: #3273dc;
+    text-align: left;
   }
 
+  .courses-a ul li :hover,
+  .employers-a ul li :hover,
+  .talents-a ul li :hover {
+    background-color: #fafafa;
+    padding: 0.5rem 55% 0.5rem 0rem;
+  }
   .courses ul,
   .employers ul,
   .talents ul {
@@ -761,16 +784,16 @@ footer div ul li a {
     display: block;
     left: 5%;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0.25rem;
   }
   .courses ul li,
   .employers ul li,
   .talents ul li .header-button {
-    padding-left: 0;
+    margin-left: 0.5rem;
   }
   .checkbtn {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
   }
   #check:checked ~ div {
@@ -778,7 +801,7 @@ footer div ul li a {
   }
 
   .fa-angle-down {
-    padding-left: 42rem;
+    padding-left: 30rem;
   }
 
   /* Hero Section */
