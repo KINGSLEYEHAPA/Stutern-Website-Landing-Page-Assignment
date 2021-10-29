@@ -25,7 +25,7 @@ header {
   box-shadow: 1px 6px 5px 1px rgba(27, 22, 66, 0.2);
   border-radius: 0.05rem;
   margin-top: 0.2rem;
-  border: 1px solid gray;
+  border: none;
 }
 .courses {
   width: 13rem;
@@ -126,6 +126,13 @@ header {
 .fas {
   margin-left: 0.5rem;
   color: #1c1c1c;
+}
+
+.checkbtn,
+input {
+  display: none;
+  font-size: 2rem;
+  color: white;
 }
 
 /* Hero section */
@@ -503,7 +510,413 @@ footer div ul li a {
   line-height: 1.5rem;
 }
 
-/* Media Queries */
+/* Media Queries- Tablet */
 
-@media only screen and (max-width: 1345px) and (min-width: 768px) {
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  /* Header Section */
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .nav {
+    position: absolute;
+    top: 5rem;
+    left: 0%;
+    display: none;
+    background-color: white;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .nav-links {
+    display: block;
+    height: 75vh;
+    width: 100%;
+  }
+  .nav-links li {
+    padding: 0 1.5rem;
+    margin-top: 0.1rem;
+  }
+
+  .nav-links .courses-menu:hover .courses ul li,
+  .nav-links .employers-menu:hover .employers ul li,
+  .nav-links .talents-menu:hover .talents ul li {
+    display: none;
+  }
+
+  .courses-a,
+  .employers-a,
+  .talents-a {
+    display: block;
+    list-style: none;
+    border: none;
+    background-color: none;
+    box-shadow: none;
+  }
+
+  .courses-a ul li a,
+  .employers-a ul li a,
+  .talents-a ul li a {
+    font-size: 0.8rem;
+  }
+  .courses-a ul li a:hover,
+  .employers-a ul li a:hover,
+  .talents-a ul li a:hover {
+    color: blue;
+    background-color: gray;
+  }
+
+  .courses ul,
+  .employers ul,
+  .talents ul {
+    list-style: none;
+    display: block;
+    left: 5%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .courses ul li,
+  .employers ul li,
+  .talents ul li .header-button {
+    padding-left: 0;
+  }
+  .checkbtn {
+    display: block;
+    font-size: 2rem;
+    color: white;
+  }
+  #check:checked ~ div {
+    display: block;
+  }
+
+  .fa-angle-down {
+    padding-left: 42rem;
+  }
+
+  /* Hero Section */
+
+  #hero {
+    height: 100vh;
+  }
+  .hero-info h1 {
+    font-size: 3rem;
+  }
+  #hero aside img {
+    width: 60%;
+  }
+  .hero-info p {
+    width: 50vw;
+  }
+
+  /* manifesto Section */
+
+  .manifesto {
+    padding: 2rem 2rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 2rem;
+  }
+  .manifesto h2,
+  .manifesto2 h2,
+  .manifesto p,
+  .manifesto2 p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .manifesto2 {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 2rem;
+  }
+
+  /* Alumni Section */
+
+  .alumni {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .alumni-a,
+  .alumni-b {
+    display: flex;
+    margin: 2rem;
+  }
+  .profile img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  .profile {
+    width: 30rem;
+    text-align: center;
+  }
+  .profile h4 {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .profile h5 {
+    font-size: 0.8rem;
+  }
+  .profile p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .profile p span {
+    font-size: 0.5rem;
+  }
+
+  .tablet1,
+  .tablet2,
+  .tablet3,
+  .tablet4 {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  /* Client Section */
+
+  .clients {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 5rem;
+  }
+
+  .clients-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .clients-links div a img {
+    width: 70%;
+  }
+}
+
+/* Media Queries-Mobile */
+
+@media only screen and (max-width: 768px) {
+  /* Header Section */
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .nav {
+    position: absolute;
+    top: 5rem;
+    left: 0%;
+    display: none;
+    background-color: white;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .nav-links {
+    display: block;
+    height: 75vh;
+    width: 100%;
+  }
+  .nav-links li {
+    padding: 0 1.5rem;
+    margin-top: 0.1rem;
+  }
+
+  .nav-links .courses-menu:hover .courses ul li,
+  .nav-links .employers-menu:hover .employers ul li,
+  .nav-links .talents-menu:hover .talents ul li {
+    display: none;
+  }
+
+  .courses-a,
+  .employers-a,
+  .talents-a {
+    display: block;
+    list-style: none;
+    border: none;
+    background-color: none;
+    box-shadow: none;
+  }
+
+  .courses-a ul li a,
+  .employers-a ul li a,
+  .talents-a ul li a {
+    font-size: 0.8rem;
+  }
+  .courses-a ul li a:hover,
+  .employers-a ul li a:hover,
+  .talents-a ul li a:hover {
+    color: blue;
+    background-color: gray;
+  }
+
+  .courses ul,
+  .employers ul,
+  .talents ul {
+    list-style: none;
+    display: block;
+    left: 5%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .courses ul li,
+  .employers ul li,
+  .talents ul li .header-button {
+    padding-left: 0;
+  }
+  .checkbtn {
+    display: block;
+    font-size: 2rem;
+    color: white;
+  }
+  #check:checked ~ div {
+    display: block;
+  }
+
+  .fa-angle-down {
+    padding-left: 42rem;
+  }
+
+  /* Hero Section */
+
+  #hero {
+    height: 150vh;
+    width: 100vw;
+    padding: 0 0.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-info h1 {
+    font-size: 3rem;
+  }
+  #hero aside img {
+    width: 40%;
+  }
+  .hero-info p {
+    width: 50vw;
+  }
+
+  /* Company Vision Section */
+
+  .vision {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+  .vision > aside {
+    margin: 6rem 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .vision-img img {
+    width: 60%;
+  }
+  .vision-info {
+    width: 60%;
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+  .vision-info h2 {
+    font-size: 2rem;
+    color: #1b1642;
+  }
+  .vision-info p {
+    font-size: 0.8rem;
+  }
+
+  /* manifesto Section */
+
+  .manifesto {
+    padding: 2rem 2rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 2rem;
+  }
+  .manifesto h2,
+  .manifesto2 h2,
+  .manifesto p,
+  .manifesto2 p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .manifesto2 {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 2rem;
+  }
+  /* Testimony Section */
+  .testimony-items p:first-child {
+    margin-top: 7rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .testimony-info img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  .testimony-info h4 {
+    font-size: 1rem;
+  }
+  .testimony-info p {
+    font-size: 0.5rem;
+  }
+
+  /* Alumni Section */
+  .alumni-a,
+  .alumni-b {
+    display: block;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .profile img {
+    margin-bottom: 1rem;
+  }
+  .profile {
+    margin: 2rem;
+  }
+
+  /* Client Section */
+
+  .clients {
+    margin: 0 2rem;
+  }
+
+  .clients-links div a img {
+    width: 100%;
+  }
+
+  /* Call to Action Section */
+
+  .call-to-action-info {
+    padding: 12rem 10vw;
+  }
+  .call-to-action {
+    margin-bottom: 10rem;
+  }
+
+  /* Footer Section */
+
+  footer {
+    height: 200vh;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    width: 80vw;
+    height: 200vh;
+  }
 }
