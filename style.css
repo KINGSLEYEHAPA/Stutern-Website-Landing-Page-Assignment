@@ -883,6 +883,10 @@ footer div ul li a {
     width: 100%;
     font-size: 1.2rem;
   }
+
+  .testimony-items {
+    margin: 0 5rem;
+  }
   .testimony-info img {
     width: 4rem;
     height: 4rem;
