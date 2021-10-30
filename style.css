@@ -571,12 +571,6 @@ footer div ul li a {
     text-align: left;
   }
 
-  .courses-a ul li,
-  .employers-a ul li,
-  .talents-a ul li {
-    /* margin: 0.5rem 0; */
-  }
-
   .courses-a ul li :hover,
   .employers-a ul li :hover,
   .talents-a ul li :hover {
@@ -639,6 +633,10 @@ footer div ul li a {
   .manifesto2 p {
     text-align: center;
     width: 100%;
+  }
+  .manifesto h2,
+  .manifesto2 h2 {
+    font-size: 2rem;
   }
 
   .manifesto2 {
@@ -813,8 +811,10 @@ footer div ul li a {
     display: flex;
     flex-direction: column;
   }
+
   .hero-info h1 {
     font-size: 3rem;
+    width: 60%;
   }
   #hero aside img {
     width: 40%;
@@ -865,6 +865,10 @@ footer div ul li a {
   .manifesto2 p {
     text-align: center;
     width: 100%;
+  }
+  .manifesto h2,
+  .manifesto2 h2 {
+    font-size: 1.5rem;
   }
 
   .manifesto2 {
